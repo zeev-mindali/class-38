@@ -1,0 +1,13 @@
+body{
+    /* קריאה משמאל לימין או ימין לשמאל*/
+    direction: rtl;
+}
+
+input:focus{
+    /* אפקט הצללה מחוץ למסגרת*/
+    box-shadow: 0 0 5px 5px red;
+    /* אפקט הצללה בתוך המסגרת */
+    /* box-shadow: inset 0 0 2px 2px red; */
+    /* צביעת רקע בתוך האלמנט*/
+    background-color: yellow;
+}

@@ -1,0 +1,27 @@
+body{ 
+    /* for body */
+    background-color: red;
+}
+.div1{ 
+    /* who have the class div1 */
+    font-size: 20px;
+    font-weight: bold;
+}
+#div2{
+    /* id div2 */
+    background-color: chartreuse;
+}
+.zeevik{
+    color:wheat;
+}
+.vika{
+    color:green;
+    letter-spacing: 5px;
+}
+div,p{
+    background-color: white;
+}
+
+*{
+
+}
