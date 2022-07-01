@@ -1,0 +1,102 @@
+/* הגדרת המסך הראשי */
+html, body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-style: italic;
+    color: wheat;
+    background-image: linear-gradient(-45deg, purple,rgb(25,4,66));
+}
+.layout{
+    height: 100%;
+    /* lets do some grid :) */
+    box-sizing: border-box; /* fix css size bug/futures */
+    display: grid;
+    grid-template-rows: 15% 80% 5%;
+    grid-template-columns: repeat(6,1fr) ; /* 1fr 1fr 1fr 1fr 1fr 1fr */
+}
+.layout>header,.layout>footer{
+    grid-column: span 6; /* מזג תאים */
+}
+.layout>main{
+    grid-column: span 5;
+    padding: 30px;
+}
+.layout,.layout>*{
+    border: 1px solid white;
+}
+#box1{
+    border-radius: 25%;
+    background: #73ad21;
+    padding: 20px;
+    width: 200px;
+    height: 150px;
+}
+
+#box1img{
+    border: 10px solid transparent;
+    padding: 15px;
+    border-image: url(../img/border.png) 30 round;
+}
+
+#box2{
+    border-radius: 25%;
+    background: #e64b5a;
+    padding: 20px;
+    width: 200px;
+    height: 150px;
+}
+
+#box2img{
+    border: 10px solid transparent;
+    padding: 15px;
+    border-image: url(../img/border.png) 30 ;
+}
+
+#box3{
+    border-radius: 25%;
+    background: #2cf07a;
+    padding: 20px;
+    width: 200px;
+    height: 150px;
+    animation-name: ronen;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+#box3img{
+    border-radius: 25%;
+    background: red;
+    padding: 20px;
+    width: 200px;
+    height: 150px;
+    animation-name: police;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes police{
+    0%{
+        background-color: red;
+    }
+    50%{
+        background-color: blue;
+    }
+}
+
+@keyframes ronen {
+    from{
+        background-color: red;
+    }
+    to {
+        background-color: blue;
+    }
+}
+
+.roundBox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 40px;
+}
