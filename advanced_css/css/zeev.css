@@ -1,0 +1,21 @@
+@charset "UTF-8";
+/* הגדרת משתנים */
+/* הגדרת עיצוב */
+body {
+  background-color: lightblue;
+  color: darkblue;
+  font-size: 18px;
+}
+
+div {
+  background-color: solomon;
+  color: yellow;
+}
+
+button {
+  background-color: solomon;
+  color: yellow;
+  border: solid 1px;
+}
+
+/*# sourceMappingURL=zeev.css.map */

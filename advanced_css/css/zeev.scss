@@ -1,0 +1,25 @@
+/* הגדרת משתנים */
+$bgcolor: lightblue;
+$textcolor: darkblue;
+$fontsize: 32px;
+$divcolor: black;
+$divtext: wheat;
+$border: solid 1px;
+
+/* הגדרת עיצוב */
+body{
+    background-color: $bgcolor;
+    color: $textcolor;
+    font-size: $fontsize;
+}
+
+div{
+    background-color: $divcolor;
+    color: $divtext;
+}
+
+button{
+    background-color: $divcolor;
+    color: $divtext;
+    border: $border;
+}
